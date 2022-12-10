@@ -1,6 +1,6 @@
 
 from load_dataset import download_dataset
-from load_model import create_classification_model
+from load_model import create_teacher_model,create_student_model
 
 
 
@@ -67,5 +67,7 @@ if __name__ == "__main__":
     
     trainloader,testloader = download_dataset()
     
-    teacher_model = create_classification_model()
+    teacher_model = create_teacher_model()
+    student_model = create_student_model()
+   
     
